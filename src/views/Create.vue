@@ -14,7 +14,7 @@
 
         <div class="input-field">
           <textarea v-model="description" id="discriptions" class="materialize-textarea"></textarea>
-          <label for="textarea2">Textarea</label>
+          <label for="description">Description</label>
           <span class="character-counter" style="float: right; font-size: 12px;">{{description.length}}/2048</span>
         </div>
         
@@ -53,7 +53,7 @@ export default {
         description: this.description,
         id: Date.now(),
         status: 'active',
-        tags: this.chips.chipsDate,
+        tags: this.chips.chipsData,
         date: this.date.date
       }
 
